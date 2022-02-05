@@ -7,6 +7,12 @@ import morgan from 'morgan';
 import path from 'path';
 import dotenv from 'dotenv';
 
+import auth from './routes/auth.js'
+import users from './routes/users.js'
+import posts from './routes/posts.js'
+import messages from './routes/messages.js'
+import conversations from './routes/conversations.js'
+
 dotenv.config();
 
 const app = express();
@@ -19,6 +25,12 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '30mb'}));
 app.get('/', (req, res) => {
     res.send('SUCCESS')
 })
+
+app.use("/server/auth", auth);
+app.use("/server/users", users);
+app.use("/server/posts", posts);
+app.use("/server/messages", messages);
+app.use("/server/conversations", conversations);
 
 
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true})
