@@ -32,6 +32,13 @@ app.use("/server/posts", posts);
 app.use("/server/messages", messages);
 app.use("/server/conversations", conversations);
 
+//assets
+app.use("/images", express.static(path.join(__dirname, "public/images")));
+
+//middlewares
+app.use(express.json());
+app.use(helmet());
+app.use(morgan("common"));
 
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => {
@@ -43,3 +50,6 @@ mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true})
         console.log('err', err)
     });
 
+app.listen(8800, () => {
+  console.log("Backend server is running!");
+});
