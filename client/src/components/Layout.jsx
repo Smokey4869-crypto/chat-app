@@ -14,7 +14,6 @@ const Layout = () => {
                 <PageRoutes />
                 <RightNav></RightNav>
             </div>
-            <Footer/>
         </BrowserRouter>
     )
 }

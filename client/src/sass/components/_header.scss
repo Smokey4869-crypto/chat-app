@@ -34,6 +34,10 @@
                 outline: 0;
                 width: 90%;
 
+                @include tablet {
+                    width: 80%;
+                };
+
                 &:focus {
                     outline: none;
                 }

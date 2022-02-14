@@ -6,7 +6,7 @@ import Home from '../pages/Home'
 const PageRoutes = () => {
     return (
         <Routes className="main">
-            <Route path='/' element={<Home/>}/>
+            <Route path='/' element={<Home />}/>
         </Routes>
     )
 }
