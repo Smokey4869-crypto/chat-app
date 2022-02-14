@@ -1,0 +1,49 @@
+@import './variables';
+@import './mixin';
+
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    // font-size: 13px;
+    overflow-x: hidden;
+}
+
+:root {
+    font-size: 20px;
+}
+
+.homeContainer {
+    display: flex;
+}
+
+.container {
+    flex: 5;
+    max-width: 1620px;
+    margin: auto;
+
+    @include tablet {
+    
+    }
+
+    @include mobile {
+
+    }
+}
+
+
+.main {
+    margin-top: $header-height;
+    min-height: 100%;
+
+    @include tablet {
+        margin-top: $header-tablet-height
+    }
+
+    @include mobile {
+        margin-top: $header-mobile-height;
+    }
+}
