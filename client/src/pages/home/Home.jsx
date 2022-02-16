@@ -1,13 +1,15 @@
 import React from 'react'
-import Helmet from '../components/Helmet'
-import Feed from '../components/Feed'
+import Helmet from '../../components/Helmet'
+import Feed from './Feed'
 
 const Home = () => {
   return (
     <div className="container">
       <div className="main">
         <Helmet title="Home">
-          <Feed></Feed>
+          <div className="home">
+            <Feed/>
+          </div>
         </Helmet>
       </div>
     </div>

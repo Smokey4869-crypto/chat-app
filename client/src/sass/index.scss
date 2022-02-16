@@ -1,8 +1,16 @@
 @import './base';
 @import './mixin';
 
-@import './components/footer';
 @import './components/header';
 
-@import './components/sidenav/leftnav';
-@import './components/sidenav/rightnav';
+@import './components/sidebar';
+@import './components/feed';
+@import './components/post';
+@import './components/widgets';
+
+
+@import './pages/home/status';
+@import './pages/home/storyreel';
+
+
+

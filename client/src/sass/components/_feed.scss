@@ -1,0 +1,6 @@
+.feed {
+    flex: 1;
+    padding: 30px 150px;  
+    @include flex(center, center);
+    flex-direction: column;
+}

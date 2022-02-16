@@ -1,0 +1,55 @@
+.status {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+    width: 100%;
+
+    &__top {
+        display: flex;
+        border-bottom: 1px solid $second-txt-color;
+        padding: 15px;
+
+        form {
+            flex: 1;
+            display: flex;
+
+            input {
+                outline-width: 0;
+                border: none;
+                flex: 1;
+                padding: 0 10px;
+                border-radius: 999px;
+                background-color: $second-txt-color;
+            }
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    &__bottom {
+        @include flex(center, space-evenly);
+
+        &__option {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            color: gray;
+            margin: 5px;
+            
+            h3 {
+                font-size: medium;
+                margin-left: 10px;
+            }
+
+            &:hover {
+                background-color:$second-txt-color;
+                border-radius: 20px;
+            }
+        }
+    }
+}

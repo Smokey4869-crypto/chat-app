@@ -2,17 +2,17 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import PageRoutes from '../routes/Routes'
 import { Header } from './Header'
-import { Footer } from './Footer'
-import { LeftNav, RightNav } from './SideNav.jsx'
+import SideBar from './SideBar'
+import Widgets from './Widgets'
 
 const Layout = () => {
     return (
         <BrowserRouter>
             <Header/>
             <div className="homeContainer">
-                <LeftNav></LeftNav>
-                <PageRoutes />
-                <RightNav></RightNav>
+                <SideBar/>
+                <PageRoutes></PageRoutes>
+                <Widgets/>
             </div>
         </BrowserRouter>
     )

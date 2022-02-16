@@ -10,20 +10,28 @@
 html {
     // font-size: 13px;
     overflow-x: hidden;
+    background-color: $second-txt-color;
 }
 
 :root {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: unset;
+}
+
 .homeContainer {
     display: flex;
+    margin-top: 0;
 }
 
 .container {
     flex: 5;
     max-width: 1620px;
     margin: auto;
+    margin-top: 0;
 
     @include tablet {
     
@@ -36,7 +44,6 @@ html {
 
 
 .main {
-    margin-top: $header-height;
 
     @include tablet {
         margin-top: $header-tablet-height
