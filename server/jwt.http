@@ -1,0 +1,13 @@
+GET http://localhost:5004/server/users
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvbGV0ZXgiLCJpYXQiOjE2NDU5MjQwNzUsImV4cCI6MTY0NTkyNDEwNX0.L9e2l6E38Dbwm75qsTnBEnQrB-1ZlUri31j7HPpZDQE
+
+###
+GET http://localhost:5004/
+
+###
+POST http://localhost:5504/server/auth/login
+Content-Type: application/json
+
+{ 
+    "username": "holetex"
+}

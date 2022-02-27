@@ -44,7 +44,6 @@ a {
 
 
 .main {
-
     @include tablet {
         margin-top: $header-tablet-height
     }

@@ -9,7 +9,7 @@ import Messenger from '../pages/messenger/Messenger';
 import Profile from '../pages/profile/Profile';
 
 const PageRoutes = () => {
-    const user = 'Smokey'
+    const user = null
     return (
         <Routes className="main">
             <Route path='/' element={
