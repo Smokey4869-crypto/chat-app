@@ -17,3 +17,7 @@
 <h4 align="left">⚡Databases </h4>
 
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)
+
+<h4 align="left"> Others </h4>
+
+<h6 align="left"> Socket.io </h6>
